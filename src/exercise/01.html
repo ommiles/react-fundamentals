@@ -33,13 +33,11 @@
         const root = document.getElementById('root');
         root.append('Hello World');
     </script> -->
+    <!-- EXERCISE 01 EXTRA CREDIT -->
     <script type="module">
-        // EXERCISE 01 EXTRA CREDIT:
-        document.body.onload = (function () {
+        document.body.onload = (() => {
             let div = document.createElement('div');
-            let content = document.createTextNode('Hello World');
-            div.appendChild(content);
-            let body = document.getElementsByTagName('body');
+            div.innerText = 'Hello World';
             document.body.appendChild(div);
         })();
     </script>
